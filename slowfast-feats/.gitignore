@@ -1,0 +1,9 @@
+tools/*
+**/__pycache__
+pretrained/
+*.out
+**/tmp
+**/sf_8x8_R50_feats
+**/resnet_8x8_R50_feats
+**/extracted_feats
+*.csv
