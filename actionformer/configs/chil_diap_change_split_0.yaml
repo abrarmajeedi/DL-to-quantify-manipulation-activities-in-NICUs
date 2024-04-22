@@ -1,0 +1,58 @@
+dataset_name: chil_diap_change
+train_split: ['training']
+val_split: ['validation']
+dataset: {
+  json_file: ./sample_data/annotations.json,
+  feat_folder: ./path/to/your/feature_directory,
+  file_prefix: ~,
+  file_ext: .npz,
+  num_classes: 3,
+  input_dim: 2304,
+  feat_stride: 16,
+  num_frames: 32,
+  default_fps: 12,
+  trunc_thresh: 0.5, #try 0.3
+  crop_ratio: [0.9, 1.0],
+  max_seq_len: 2816,
+  label_dict: {
+            "diaper-change": 0,
+            "feeding": 1,
+            "patting": 2,   
+            },
+}
+model: {
+  backbone_arch: [2, 2, 7],
+  regression_range: [[0, 4], [2, 8], [4, 16], [8, 32], [16, 64], [32,128], [64,256], [128, 10000]],
+  fpn_type: identity,
+  max_buffer_len_factor: 2.0,
+  n_mha_win_size: 23,
+}
+opt: {
+  learning_rate: 0.0004,
+  epochs: 100,
+  warmup_epochs: 5,
+  weight_decay: 0.04,
+}
+loader: {
+  batch_size: 8,
+  num_workers: 8,
+}
+train_cfg: {
+  init_loss_norm: 250,
+  clip_grad_l2norm: 1.0,
+  cls_prior_prob: 0.01,
+  center_sample: none,
+  center_sample_radius: 3.5,
+  dropout : 0.1,
+  dropout_path : 0.1,
+}
+test_cfg: {
+  pre_nms_topk: 4000,
+  max_seg_num: 400,
+  min_score: 0.01,
+  nms_method: soft,
+  iou_threshold: 0.1,
+  nms_sigma : 0.6, #change to 0.9
+  multiclass_nms: False
+}
+output_folder: ./ckpt
