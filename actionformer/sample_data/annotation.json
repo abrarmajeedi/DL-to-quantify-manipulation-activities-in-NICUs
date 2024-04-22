@@ -1,0 +1,172 @@
+{
+    "database": {
+        "video_1": {
+            "subset": "training",
+            "resolution": "AxA",
+            "url": "video_1.mp4",
+            "duration": 2009.0,
+            "annotations": [
+                {
+                    "label": "diaper-change",
+                    "label_id": 0,
+                    "segment": [
+                        1559.0,
+                        1632.0
+                    ]
+                },
+                {
+                    "label": "patting",
+                    "label_id": 2,
+                    "segment": [
+                        1505.0,
+                        1536.0
+                    ]
+                }
+            ]
+        },
+        "video_2": {
+            "subset": "training",
+            "resolution": "AxA",
+            "url": "video_2.mp4",
+            "duration": 3599.0,
+            "annotations": [
+                {
+                    "label": "diaper-change",
+                    "label_id": 0,
+                    "segment": [
+                        1385.0,
+                        1442.0
+                    ]
+                },
+                {
+                    "label": "patting",
+                    "label_id": 2,
+                    "segment": [
+                        1232.0,
+                        1245.0
+                    ]
+                },
+                {
+                    "label": "patting",
+                    "label_id": 2,
+                    "segment": [
+                        1259.0,
+                        1337.0
+                    ]
+                },
+                {
+                    "label": "feeding",
+                    "label_id": 1,
+                    "segment": [
+                        1175.0,
+                        1214.0
+                    ]
+                }
+            ]
+        },
+        "video_3": {
+            "subset": "training",
+            "resolution": "AxA",
+            "url": "video_3.mp4",
+            "duration": 3599.0,
+            "annotations": [
+                {
+                    "label": "diaper-change",
+                    "label_id": 0,
+                    "segment": [
+                        1848.0,
+                        1949.0
+                    ]
+                },
+                {
+                    "label": "patting",
+                    "label_id": 2,
+                    "segment": [
+                        1745.0,
+                        1752.0
+                    ]
+                },
+                {
+                    "label": "patting",
+                    "label_id": 2,
+                    "segment": [
+                        1755.0,
+                        1792.0
+                    ]
+                },
+                {
+                    "label": "patting",
+                    "label_id": 2,
+                    "segment": [
+                        1797.0,
+                        1803.0
+                    ]
+                },
+                {
+                    "label": "feeding",
+                    "label_id": 1,
+                    "segment": [
+                        1672.0,
+                        1719.0
+                    ]
+                }
+            ]
+        },
+        "video_4": {
+            "subset": "training",
+            "resolution": "AxA",
+            "url": "video_4.mp4",
+            "duration": 3599.0,
+            "annotations": [
+                {
+                    "label": "diaper-change",
+                    "label_id": 0,
+                    "segment": [
+                        1752.0,
+                        1804.0
+                    ]
+                },
+                {
+                    "label": "patting",
+                    "label_id": 2,
+                    "segment": [
+                        1603.0,
+                        1706.0
+                    ]
+                },
+                {
+                    "label": "feeding",
+                    "label_id": 1,
+                    "segment": [
+                        1464.0,
+                        1573.0
+                    ]
+                }
+            ]
+        },
+        "video_5": {
+            "subset": "training",
+            "resolution": "AxA",
+            "url": "video_5.mp4",
+            "duration": 3599.0,
+            "annotations": [
+                {
+                    "label": "diaper-change",
+                    "label_id": 0,
+                    "segment": [
+                        1390.0,
+                        1447.0
+                    ]
+                },
+                {
+                    "label": "patting",
+                    "label_id": 2,
+                    "segment": [
+                        1238.0,
+                        1252.0
+                    ]
+                }
+            ]
+        }
+    }
+}
